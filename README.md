@@ -3,9 +3,9 @@ This repo follows [Angrist and Evans (1998)](http://piketty.pse.ens.fr/fichiers/
 
 ### Project Structure
 
-- cleaning_and_analysis.R: R script that processes the census data, performs the analysis, and generates the results.
-- cleaning_and_analysis.ipynb: Jupyter Notebook that performs the same tasks.
-- utils.py: Contains utility functions used throughout the analysis.
+- `cleaning_and_analysis.R`: R script that processes the census data, performs the analysis, and generates the results.
+- `cleaning_and_analysis.ipynb`: Jupyter Notebook that performs the same tasks.
+- `utils.py`: Contains utility functions used throughout the analysis.
 
 ### Empirical Strategy
 I exploit the fact that if the first two children in a family are of the same sex, the probability of having a third child is higher.
