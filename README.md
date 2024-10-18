@@ -1,16 +1,16 @@
-## Estimating The Effect of Having Children on Labor Supply
+## Estimating The Effect of Having Children on Labor Supply and Income
 This repo follows [Angrist and Evans (1998)](http://piketty.pse.ens.fr/fichiers/enseig/ecoineg/articl/AngristEvans1998.pdf) and uses 1980 US census data to estimate the effect of having children on labor supply through an Instrumental Variables (IV) strategy.
 
-### Project Structure:
+### Project Structure
 
 - cleaning_and_analysis.R: R script that processes the census data, performs the analysis, and generates the results.
-- cleaning_and_analysis.ipynb: Jupyter Notebook that performs similar tasks as the R script but with Python and R integration.
+- cleaning_and_analysis.ipynb: Jupyter Notebook that performs the same tasks.
 - utils.py: Contains utility functions used throughout the analysis.
 
 ### Empirical Strategy
 I exploit the fact that if the first two children in a family are of the same sex, the probability of having a third child is higher.
-Using this exogenous variation in the number of children in a household, I use an IV approach to estimate the effect of having a third child on labor supply.
-I estimate my results separately for all women, married women, and husbands.
+Using this exogenous variation in the number of children in a household, I use an IV approach to estimate the effect of having a third child on labor supply and income.
+I report results separately for the full sample of women, married women, and married men.
 
 The empirical specification is as follows:
 
@@ -31,13 +31,12 @@ Where:
 - $\text{SameSex}_i$ is the instrument for having three or more children.
 - $\mathbf{X}_i$ is a vector of control variables including the mother's age, race, and age at birth of oldest child, as well as indicators for the gender of children.
 
-The coefficient of interest is $\gamma_1$, which captures the causal effect of having three or more children on labor supply.
+The coefficient of interest is $\gamma_1$, which captures the causal effect of having three or more children on measures labor supply and income.
 
-### Data:
+### Data
 The data used is available for public use and can be downloaded at this [link](https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/11288) from the Harvard Dataverse (the filename is `m_d_806.tab`).
 
-
-### Requirements:
+### Requirements
 The project requires the following libraries:
 
 - For R:
