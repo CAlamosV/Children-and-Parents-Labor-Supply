@@ -15,14 +15,14 @@ I estimate my results separately for all women, married women, and husbands.
 The empirical specification is as follows:
 
 First Stage:
-$$
+```math
 \text{ThreeOrMoreChildren}_i = \alpha_0 + \alpha_1 \cdot \text{SameSex}_i + \mathbf{X}_i' \beta + u_i
-$$
+```
 
 Second Stage:
-$$
+```math
 \text{Y}_i = \gamma_0 + \gamma_1 \cdot \hat{\text{ThreeOrMoreChildren}}_i + \mathbf{X}_i' \delta + \epsilon_i
-$$
+```
 
 Where:
 - $\text{ThreeOrMoreChildren}_i$ is a binary variable indicating whether family $i$ has three or more children.
