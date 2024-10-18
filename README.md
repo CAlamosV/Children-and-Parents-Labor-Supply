@@ -1,14 +1,12 @@
 ## Estimating The Effect of Having Children on Labor Supply
 
-This repository replicates the study from [Angrist and Evans (1998)](http://piketty.pse.ens.fr/fichiers/enseig/ecoineg/articl/AngristEvans1998.pdf), estimating the effect of having children on labor supply using U.S. 1980 Census data and an Instrumental Variables (IV) approach. Specifically, the study uses sibling-sex composition as an instrument for having three or more children.
-
 ### Project Structure:
 
 - cleaning_and_analysis.R: R script that processes the census data, performs the analysis, and generates the results.
 - cleaning_and_analysis.ipynb: Jupyter Notebook that performs similar tasks as the R script but with Python and R integration.
 - utils.py: Contains utility functions used throughout the analysis.
 
-## Estimating The Effect of Having Children on Labor Supply using a Sibling-Sex Composition Instrument
+### Empirical Strategy
 
 I follow [Angrist and Evans (1998)](http://piketty.pse.ens.fr/fichiers/enseig/ecoineg/articl/AngristEvans1998.pdf) and use 1980 census data to estimate the effect of having children on labor supply.
 
