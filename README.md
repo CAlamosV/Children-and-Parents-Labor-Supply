@@ -1,4 +1,5 @@
 ## Estimating The Effect of Having Children on Labor Supply
+This repo follows [Angrist and Evans (1998)](http://piketty.pse.ens.fr/fichiers/enseig/ecoineg/articl/AngristEvans1998.pdf) and uses 1980 US census data to estimate the effect of having children on labor supply through an Instrumental Variables (IV) strategy.
 
 ### Project Structure:
 
@@ -7,11 +8,8 @@
 - utils.py: Contains utility functions used throughout the analysis.
 
 ### Empirical Strategy
-
-I follow [Angrist and Evans (1998)](http://piketty.pse.ens.fr/fichiers/enseig/ecoineg/articl/AngristEvans1998.pdf) and use 1980 census data to estimate the effect of having children on labor supply.
-
-In particular, I exploit the fact that if the first two children in a family are of the same sex, the probability of having a third child is higher.
-I use this exogenous variation in number of children to estimate the effect of having a third child on labor supply through an Instrumental Variables (IV) approach.
+I exploit the fact that if the first two children in a family are of the same sex, the probability of having a third child is higher.
+Using this exogenous variation in the number of children in a household, I use an IV approach to estimate the effect of having a third child on labor supply.
 I estimate my results separately for all women, married women, and husbands.
 
 The empirical specification is as follows:
